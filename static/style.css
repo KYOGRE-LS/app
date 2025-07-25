@@ -115,6 +115,10 @@ header h1 {
   font-style: italic;
 }
 
+.main-content {
+  flex: 1;
+}
+
 /* Conteúdo principal */
 .container {
   max-width: 800px;
