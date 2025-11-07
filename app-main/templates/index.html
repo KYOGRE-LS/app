@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como fazer um chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-content">
+
+  <header>
+ <nav class="navbar">
+  <div class="container">
+    <div class="logo">INFORMÁTICA</div>
+    <ul class="nav-links">
+      <li><a href="https://app-weaw.onrender.com/">Início</a></li>
+      <li><a href="https://tutorial-1-u28x.onrender.com/">Tutorial</a></li>
+      <li><a href="https://quiz-3m61.onrender.com/">Quiz</a></li>
+      <li><a href="https://www.instagram.com/0_pato.loko_0/">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+  </header>
+     <button id="chatButton" onclick="toggleChat()">&#x1F4AC</button>
+    <div id="chatContainer" style="display:none;">
+        <div id="chatHeader" onclick="toggleChat()">Prova de Informática</div>
+        <div id="chatBox" style="height:200px; overflow-y:auto;"></div>
+        <input type="text" id="userInput" placeholder="tipo de mensagem..." />
+        <button id="sendButton" onclick="sendMessage()">enviar</button>
+    </div>
+
+   <main class="container">
+    <main  id="textoFonte">
+
+    <section class="step">
+      <h2>Passo 1: Escolha da Ferramenta</h2>
+      <p>Antes de tudo, decida qual linguagem e plataforma você irá usar. Neste site, usamos Python por ser simples e poderoso.</p>
+    </section>
+
+    <section class="step">
+      <h2>Passo 2: Instalação</h2>
+      <p>Instale o Python e, se necessário, bibliotecas como <code>ChatterBot</code> ou <code>NLTK</code>. Isso permitirá que você processe mensagens e treine o bot. Mas 
+      ensinaremos somente a fazer a versao ineficiente, que responde perguntas previamente definidas.</p>
+    </section>
+
+    <section class="step">
+      <h2>Passo 3: Programação do Bot</h2>
+      <p >Escreva a lógica de respostas. O chatbot deve conseguir identificar palavras-chave e responder perguntas simples.</p>
+    </section>
+     <p >Tá ruim da visão velho.</p>
+    <button onclick="aumentarFonte()">Aumenta</button>
+    <button onclick="diminuirFonte()">Diminuir</button>
+  </main>
+  </main>
+  </div>
+  <footer>
+    <p>&copy; 2025 - Tutorial de Chatbots</p>
+  </footer>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='j.js') }}"></script>
+<script src="{{ url_for('static', filename='mobile-navbar.js') }}"></script>
+<script src="guilherme.js"></script>
+
+    
+   
+
+  </body>
+</html>
