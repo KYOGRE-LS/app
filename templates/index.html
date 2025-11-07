@@ -32,6 +32,7 @@
     </div>
 
    <main class="container">
+    <main  id="textoFonte">
 
     <section class="step">
       <h2>Passo 1: Escolha da Ferramenta</h2>
@@ -46,9 +47,12 @@
 
     <section class="step">
       <h2>Passo 3: Programação do Bot</h2>
-      <p>Escreva a lógica de respostas. O chatbot deve conseguir identificar palavras-chave e responder perguntas simples.</p>
+      <p >Escreva a lógica de respostas. O chatbot deve conseguir identificar palavras-chave e responder perguntas simples.</p>
     </section>
-
+     <p >Tá ruim da visão velho.</p>
+    <button onclick="aumentarFonte()">Aumenta</button>
+    <button onclick="diminuirFonte()">Diminuir</button>
+  </main>
   </main>
   </div>
   <footer>
@@ -57,9 +61,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <script src="{{ url_for('static', filename='j.js') }}"></script>
 <script src="{{ url_for('static', filename='mobile-navbar.js') }}"></script>
+<script src="guilherme.js"></script>
 
     
    
 
   </body>
 </html>
+
